@@ -126,12 +126,12 @@ a{color:inherit;text-decoration:none}
 .years .msg{margin-top:40px;text-align:center;font-family:var(--head);font-size:17px;line-height:2.1;letter-spacing:.04em}
 
 /* ---------- 2026年の挑戦 ---------- */
-.try{padding:64px 0 56px}
-.try-list{display:grid;gap:14px}
-.try-card{display:grid;grid-template-columns:64px 1fr;gap:16px;align-items:start;background:#fff;border:1px solid #e3d8c4;padding:20px 18px}
-.try-card .no{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:var(--beni);color:#fff;font-family:var(--en);font-weight:700;font-size:22px;line-height:1}
-.try-card h3{font-family:var(--head);font-weight:700;font-size:18px;line-height:1.5}
-.try-card p{font-size:15px;color:var(--ink-2);line-height:1.8;margin-top:6px}
+.try{padding:56px 0 0;text-align:center}
+.try .en{display:block;font-size:15px;letter-spacing:.24em;color:var(--beni)}
+.try-msg{font-family:var(--head);font-weight:700;font-size:21px;line-height:1.75;letter-spacing:.08em;margin-top:14px}
+.try-msg2{font-size:17px;line-height:1.95;margin-top:18px}
+.try-msg2 b{color:var(--beni);font-size:1.1em}
+.try-arw{display:block;width:0;height:0;margin:26px auto 0;border-left:22px solid transparent;border-right:22px solid transparent;border-top:18px solid var(--beni)}
 
 /* ---------- 商品 ---------- */
 .items{background:#fff;padding:64px 0 60px}
@@ -163,7 +163,8 @@ a{color:inherit;text-decoration:none}
 .ks-title{text-align:center}
 .ks-title .en{display:block;font-size:15px;letter-spacing:.24em;color:var(--kin-l)}
 .ks-title h2{font-family:var(--head);font-weight:900;font-size:clamp(34px,10vw,52px);line-height:1.3;letter-spacing:.08em;margin-top:8px}
-.ks-title h2 small{display:block;font-size:.46em;letter-spacing:.14em;color:var(--kin-l)}
+.ks-title h2 .kw{display:block;font-size:.62em;letter-spacing:.2em}
+.ks-title h2 small{display:block;margin-bottom:.6em;font-size:.46em;letter-spacing:.14em;color:var(--kin-l)}
 .ks-period{display:inline-block;margin-top:14px;background:var(--kuro);color:var(--kin-l);font-size:15px;font-weight:700;padding:6px 16px;letter-spacing:.04em}
 .ks-period b{font-family:var(--en);font-size:19px;color:#fff}
 .ks-lot{margin-top:30px;background:var(--kinari);color:var(--ink);padding:24px 18px 20px;text-align:center;border:3px solid var(--kin)}
@@ -240,7 +241,6 @@ a{color:inherit;text-decoration:none}
   .letter-sec{padding:12px 48px 64px}
   .letter-frame{padding:20px}
   .letter{padding:52px 48px 46px;font-size:18px}
-  .try-list{grid-template-columns:1fr}
   .rk{grid-template-columns:38% 1fr;gap:28px}
   .rk h3{font-size:21px}
   .rk .c{font-size:15px}
@@ -319,68 +319,13 @@ a{color:inherit;text-decoration:none}
     <p class="msg">こうして歩み続けてこられたのも<br>いつも支えてくださる<br>お客様のおかげです</p>
   </section>
 
-  <!-- ===== 2026年の挑戦（▼要確認：内容は差し替え可） ===== -->
+  <!-- ===== 今年のかわすい ===== -->
   <section class="try">
     <div class="in">
-      <div class="head">
-        <span class="en">CHALLENGE 2026</span>
-        <h2>今年はこんなことに<br>挑戦しました</h2>
-        <p class="lead">皆様の声をヒントに、新しい企画を<br>形にしてきました</p>
-      </div>
-      <div class="try-list">
-        <div class="try-card"><span class="no">01</span><div><h3>出店22周年記念祭</h3><p>日頃の感謝をこめて、記念の特別企画をお届けしました。</p></div></div>
-        <div class="try-card"><span class="no">02</span><div><h3>お歳暮 早割キャンペーン</h3><p>早めのご注文でおトクに贈れる、冬のギフト企画をスタートしました。</p></div></div>
-        <div class="try-card"><span class="no">03</span><div><h3>冬の味覚ラインナップ</h3><p>うなぎに加えて、生ズワイガニや紀州の本マグロ、有田みかんもお届けしています。</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== 商品 ===== -->
-  <section class="items">
-    <div class="in">
-      <div class="head">
-        <span class="en">KAWASUI'S CHOICE</span>
-        <h2>かわすいの<br>人気うなぎ</h2>
-        <p class="lead">まだ食べたことのない方にも<br>ぜひ一度味わっていただきたい逸品です</p>
-      </div>
-      <div class="rank">
-        <article class="rk">
-          <a class="ph" href="https://item.rakuten.co.jp/kawasui/10000130/"><span class="no">01</span><img src="https://shop.r10s.jp/kawasui/cabinet/check/ota-dai80_601.jpg" alt="国産うなぎ蒲焼き3種セット" loading="lazy"></a>
-          <div>
-            <h3>国産うなぎ蒲焼き<br>3種セット</h3>
-            <p class="c">長焼き・カット・きざみを食べ比べ。ご家族みんなで囲める定番セットです。</p>
-            <p class="price">5,990 – 7,715<small>円（税込）</small></p>
-            <a class="go" href="https://item.rakuten.co.jp/kawasui/10000130/">商品を見る ›</a>
-          </div>
-        </article>
-        <article class="rk">
-          <a class="ph" href="https://item.rakuten.co.jp/kawasui/10002324/"><span class="no">02</span><img src="https://shop.r10s.jp/kawasui/cabinet/check/ota2_601.jpg" alt="中身が選べる国産うなぎ2種セット" loading="lazy"></a>
-          <div>
-            <h3>中身が選べる<br>国産うなぎ2種セット</h3>
-            <p class="c">お好みの組み合わせを選べる、自分用にもギフトにも人気のセット。</p>
-            <p class="price">4,600 – 5,030<small>円（税込）</small></p>
-            <a class="go" href="https://item.rakuten.co.jp/kawasui/10002324/">商品を見る ›</a>
-          </div>
-        </article>
-        <article class="rk">
-          <a class="ph" href="https://item.rakuten.co.jp/kawasui/10002524/"><span class="no">03</span><img src="https://shop.r10s.jp/kawasui/cabinet/check/s-kb2300sn_601.jpg" alt="国産うなぎ2尾入300g" loading="lazy"></a>
-          <div>
-            <h3>国産うなぎ<br>2尾入 300g</h3>
-            <p class="c">ふっくら焼き上げた蒲焼きを2尾。ご夫婦やお二人の食卓に。</p>
-            <p class="price">5,560<small>円〜（税込）</small></p>
-            <a class="go" href="https://item.rakuten.co.jp/kawasui/10002524/">商品を見る ›</a>
-          </div>
-        </article>
-      </div>
-
-      <h3 class="sub-head">はじめての方にも</h3>
-      <div class="grid">
-        <a class="it" href="https://item.rakuten.co.jp/kawasui/10002290/"><span class="ph"><img src="https://shop.r10s.jp/kawasui/cabinet/gifuto/gf-k1002ks2_601.jpg" alt="きざみと肝吸いギフト" loading="lazy"></span><h4>きざみと肝吸いギフト</h4><p class="price">3,990<small>円</small></p><p class="tg">送料無料・冷凍便</p></a>
-        <a class="it" href="https://item.rakuten.co.jp/kawasui/10002526/"><span class="ph"><img src="https://shop.r10s.jp/kawasui/cabinet/gifuto/imgrc0109082864.jpg" alt="うなぎのおつまみセット" loading="lazy"></span><h4>うなぎのおつまみセット</h4><p class="price">4,800<small>円</small></p><p class="tg">送料無料・冷凍便</p></a>
-        <a class="it" href="https://item.rakuten.co.jp/kawasui/10002534/"><span class="ph"><img src="https://shop.r10s.jp/kawasui/cabinet/ncimag00/cut2100snj-3_601.jpg" alt="常温タイプ 蒲焼きカット3人前" loading="lazy"></span><h4>常温タイプ 蒲焼きカット3人前</h4><p class="price">5,990<small>円〜</small></p><p class="tg">送料無料・冷凍庫いらず</p></a>
-        <a class="it" href="https://item.rakuten.co.jp/kawasui/10000113/"><span class="ph"><img src="https://shop.r10s.jp/kawasui/cabinet/gifuto/gf-kb1702sn_601.jpg" alt="特大うなぎ蒲焼き170g×2本" loading="lazy"></span><h4>特大うなぎ蒲焼き 170g×2本</h4><p class="price">8,210<small>円〜</small></p><p class="tg">送料無料・冷凍便</p></a>
-      </div>
-      <div class="shop-link"><a class="btn" href="https://www.rakuten.co.jp/kawasui/">うなぎ屋かわすい トップへ</a></div>
+      <span class="en">THANK YOU 2026</span>
+      <p class="try-msg">今年は皆様のお声をヒントに<br>新しい企画をたくさん<br>行うことができました。</p>
+      <p class="try-msg2">また今月11月は<br><b>「かわすい決算大感謝祭」</b>の<br>1か月間のスペシャルイベントも<br>開催しております。</p>
+      <span class="try-arw" aria-hidden="true"></span>
     </div>
   </section>
 
@@ -389,7 +334,7 @@ a{color:inherit;text-decoration:none}
     <div class="in">
       <div class="ks-title">
         <span class="en">NOVEMBER SPECIAL</span>
-        <h2><small>11月はもうひとつのお楽しみ</small>決算大感謝祭</h2>
+        <h2><small>11月の1か月間スペシャルイベント</small><span class="kw">かわすい</span>決算大感謝祭</h2>
         <p class="ks-period"><b>11/4</b>(水)20:00 〜 <b>11/27</b>(金)13:59</p>
       </div>
 
@@ -461,6 +406,55 @@ a{color:inherit;text-decoration:none}
       <h2>うなぎ屋かわすいに<br>あなたの一票を</h2>
       <a class="vote" data-vote href="#">うなぎ屋かわすいに投票する<span class="arw">▶</span></a>
       <p class="vote-note">投票は11月30日（月）09:59まで<br>投票すると最大10,000ポイントが10万名様に当たる！</p>
+    </div>
+  </section>
+
+  <!-- ===== 商品 ===== -->
+  <section class="items">
+    <div class="in">
+      <div class="head">
+        <span class="en">KAWASUI'S CHOICE</span>
+        <h2>かわすいの<br>人気うなぎ</h2>
+        <p class="lead">まだ食べたことのない方にも<br>ぜひ一度味わっていただきたい逸品です</p>
+      </div>
+      <div class="rank">
+        <article class="rk">
+          <a class="ph" href="https://item.rakuten.co.jp/kawasui/10000130/"><span class="no">01</span><img src="https://shop.r10s.jp/kawasui/cabinet/check/ota-dai80_601.jpg" alt="国産うなぎ蒲焼き3種セット" loading="lazy"></a>
+          <div>
+            <h3>国産うなぎ蒲焼き<br>3種セット</h3>
+            <p class="c">長焼き・カット・きざみを食べ比べ。ご家族みんなで囲める定番セットです。</p>
+            <p class="price">5,990 – 7,715<small>円（税込）</small></p>
+            <a class="go" href="https://item.rakuten.co.jp/kawasui/10000130/">商品を見る ›</a>
+          </div>
+        </article>
+        <article class="rk">
+          <a class="ph" href="https://item.rakuten.co.jp/kawasui/10002324/"><span class="no">02</span><img src="https://shop.r10s.jp/kawasui/cabinet/check/ota2_601.jpg" alt="中身が選べる国産うなぎ2種セット" loading="lazy"></a>
+          <div>
+            <h3>中身が選べる<br>国産うなぎ2種セット</h3>
+            <p class="c">お好みの組み合わせを選べる、自分用にもギフトにも人気のセット。</p>
+            <p class="price">4,600 – 5,030<small>円（税込）</small></p>
+            <a class="go" href="https://item.rakuten.co.jp/kawasui/10002324/">商品を見る ›</a>
+          </div>
+        </article>
+        <article class="rk">
+          <a class="ph" href="https://item.rakuten.co.jp/kawasui/10002524/"><span class="no">03</span><img src="https://shop.r10s.jp/kawasui/cabinet/check/s-kb2300sn_601.jpg" alt="国産うなぎ2尾入300g" loading="lazy"></a>
+          <div>
+            <h3>国産うなぎ<br>2尾入 300g</h3>
+            <p class="c">ふっくら焼き上げた蒲焼きを2尾。ご夫婦やお二人の食卓に。</p>
+            <p class="price">5,560<small>円〜（税込）</small></p>
+            <a class="go" href="https://item.rakuten.co.jp/kawasui/10002524/">商品を見る ›</a>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="sub-head">はじめての方にも</h3>
+      <div class="grid">
+        <a class="it" href="https://item.rakuten.co.jp/kawasui/10002290/"><span class="ph"><img src="https://shop.r10s.jp/kawasui/cabinet/gifuto/gf-k1002ks2_601.jpg" alt="きざみと肝吸いギフト" loading="lazy"></span><h4>きざみと肝吸いギフト</h4><p class="price">3,990<small>円</small></p><p class="tg">送料無料・冷凍便</p></a>
+        <a class="it" href="https://item.rakuten.co.jp/kawasui/10002526/"><span class="ph"><img src="https://shop.r10s.jp/kawasui/cabinet/gifuto/imgrc0109082864.jpg" alt="うなぎのおつまみセット" loading="lazy"></span><h4>うなぎのおつまみセット</h4><p class="price">4,800<small>円</small></p><p class="tg">送料無料・冷凍便</p></a>
+        <a class="it" href="https://item.rakuten.co.jp/kawasui/10002534/"><span class="ph"><img src="https://shop.r10s.jp/kawasui/cabinet/ncimag00/cut2100snj-3_601.jpg" alt="常温タイプ 蒲焼きカット3人前" loading="lazy"></span><h4>常温タイプ 蒲焼きカット3人前</h4><p class="price">5,990<small>円〜</small></p><p class="tg">送料無料・冷凍庫いらず</p></a>
+        <a class="it" href="https://item.rakuten.co.jp/kawasui/10000113/"><span class="ph"><img src="https://shop.r10s.jp/kawasui/cabinet/gifuto/gf-kb1702sn_601.jpg" alt="特大うなぎ蒲焼き170g×2本" loading="lazy"></span><h4>特大うなぎ蒲焼き 170g×2本</h4><p class="price">8,210<small>円〜</small></p><p class="tg">送料無料・冷凍便</p></a>
+      </div>
+      <div class="shop-link"><a class="btn" href="https://www.rakuten.co.jp/kawasui/">うなぎ屋かわすい トップへ</a></div>
     </div>
   </section>
 
