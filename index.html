@@ -7,7 +7,7 @@
 <title>うなぎ屋かわすいへ応援よろしくお願いします｜ショップ・オブ・ザ・イヤー2026 投票受付中</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700;900&family=Josefin+Sans:wght@600;700&family=Klee+One:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@800&family=Noto+Sans+JP:wght@400;500;700;900&family=Jost:wght@600;700&family=Zen+Kurenaido&display=swap" rel="stylesheet">
 <style>
 :root{
   --kuro:#17110d;      /* 漆黒 */
@@ -22,8 +22,9 @@
   --ink-2:#5e544b;
   --mincho:"Shippori Mincho B1",serif;
   --sans:"Noto Sans JP",sans-serif;
-  --en:"Josefin Sans","Noto Sans JP",sans-serif;
-  --hand:"Klee One","Noto Sans JP",sans-serif;
+  --en:"Jost","Noto Sans JP",sans-serif;
+  --hand:"Zen Kurenaido","Noto Sans JP",sans-serif;
+  --head:"Noto Sans JP",sans-serif;  /* 見出し：家具のソムリエに合わせた太ゴシック */
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#d9cfbf;color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.9;-webkit-font-smoothing:antialiased}
@@ -35,8 +36,8 @@ a{color:inherit;text-decoration:none}
 
 /* ---------- 共通見出し ---------- */
 .head{text-align:center;margin-bottom:34px}
-.head .en{display:block;font-size:14px;letter-spacing:.24em;color:var(--beni)}
-.head h2{font-family:var(--mincho);font-weight:800;font-size:27px;line-height:1.5;letter-spacing:.06em;margin-top:10px}
+.head .en{display:block;font-size:15px;letter-spacing:.24em;color:var(--beni)}
+.head h2{font-family:var(--head);font-weight:700;font-size:27px;line-height:1.5;letter-spacing:.1em;margin-top:10px}
 .head h2::after{content:"";display:block;width:44px;height:2px;background:var(--kin);margin:18px auto 0}
 .head .lead{margin-top:16px;font-size:15px;color:var(--ink-2)}
 .dark .head .en{color:var(--kin-l)}
@@ -46,17 +47,17 @@ a{color:inherit;text-decoration:none}
 /* ---------- 投票ボタン（シャイン） ---------- */
 .vote{position:relative;display:flex;align-items:center;justify-content:center;gap:12px;width:100%;max-width:520px;min-height:72px;margin:0 auto;padding:0 20px;border-radius:999px;background:linear-gradient(180deg,#f0d898 0%,var(--kin) 55%,#a9853f 100%);color:var(--kuro);font-weight:900;font-size:17px;letter-spacing:.04em;box-shadow:0 5px 0 #7d6127,0 10px 22px rgba(0,0,0,.28);overflow:hidden;transition:transform .15s,box-shadow .15s}
 .vote:active{transform:translateY(3px);box-shadow:0 2px 0 #7d6127,0 5px 12px rgba(0,0,0,.25)}
-.vote .arw{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--kuro);color:var(--kin-l);font-size:13px;flex:none}
+.vote .arw{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--kuro);color:var(--kin-l);font-size:14px;flex:none}
 .vote::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.75),transparent);transform:skewX(-20deg);pointer-events:none}
 .vote.kw-shine-play::after{animation:shine 1.6s ease-in-out}
 @keyframes shine{to{left:130%}}
-.vote-note{text-align:center;font-size:12px;color:var(--ink-2);margin-top:14px;line-height:1.7}
+.vote-note{text-align:center;font-size:13px;color:var(--ink-2);margin-top:14px;line-height:1.7}
 .dark .vote-note{color:rgba(244,238,227,.6)}
 
 /* ---------- FV ---------- */
 .fv{position:relative;background:radial-gradient(120% 80% at 80% 100%,#3a2216 0%,var(--kuro) 62%);color:#fff;padding:22px 24px 40px;overflow:hidden}
-.fv-top{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:.16em;color:rgba(244,238,227,.6);border-bottom:1px solid rgba(201,164,92,.35);padding-bottom:14px}
-.fv-top b{font-family:var(--mincho);font-size:15px;color:var(--kinari);letter-spacing:.2em}
+.fv-top{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;font-size:13px;letter-spacing:.16em;color:rgba(244,238,227,.6);border-bottom:1px solid rgba(201,164,92,.35);padding-bottom:14px}
+.fv-top b{font-family:var(--head);font-size:15px;color:var(--kinari);letter-spacing:.2em}
 .fv-body{position:relative;z-index:2;margin-top:30px}
 .fv-title{font-family:var(--en);font-weight:700;line-height:.98;letter-spacing:.01em;font-size:clamp(40px,11vw,72px)}
 .fv-title .yr{display:block;font-size:1.5em;line-height:1;margin-top:.1em;background:linear-gradient(180deg,#fff3cf 0%,var(--kin-l) 38%,var(--kin) 70%,#9d7a36 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -65,22 +66,22 @@ a{color:inherit;text-decoration:none}
 .fv-open{display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:14px;background:var(--beni);border-top:2px solid var(--kin);border-bottom:2px solid var(--kin);padding:10px 14px 12px;box-shadow:0 8px 20px rgba(0,0,0,.35)}
 .fv-open .o{white-space:nowrap;font-weight:900;font-size:clamp(40px,12.4vw,60px);line-height:1.1;letter-spacing:.04em;color:#fff;text-shadow:0 2px 0 var(--beni-d)}
 .fv-open .o b{color:var(--kin-l)}
-.fv-open .dl{flex:none;display:flex;align-items:baseline;gap:6px;font-size:14px;font-weight:700;letter-spacing:.04em;color:var(--kin-l);border-top:1px solid rgba(234,210,154,.45);padding-top:6px}
+.fv-open .dl{flex:none;display:flex;align-items:baseline;gap:6px;font-size:15px;font-weight:700;letter-spacing:.04em;color:var(--kin-l);border-top:1px solid rgba(234,210,154,.45);padding-top:6px}
 .fv-open .dl .d{font-family:var(--en);font-size:28px;color:#fff;line-height:1}
 /* 投票ポイント */
 .fv-pt{margin-top:18px;border:1px solid var(--kin);background:rgba(201,164,92,.1);padding:16px 14px 14px;text-align:center;line-height:1.5}
-.fv-pt .l1{font-size:14px;font-weight:700;color:var(--kin-l);letter-spacing:.04em}
+.fv-pt .l1{font-size:15px;font-weight:700;color:var(--kin-l);letter-spacing:.04em}
 .fv-pt .l2{font-size:15px;font-weight:700;margin-top:6px}
 .fv-pt .l3{font-weight:900;font-size:clamp(22px,6.6vw,34px);line-height:1.35;margin-top:4px}
 .fv-pt .l3 .p{font-family:var(--en);font-size:1.5em;line-height:1;color:var(--kin-l);letter-spacing:.01em}
 .fv-pt .l3 .p small{font-family:var(--sans);font-size:.6em}
 .fv-pt .l3 .w{display:block}
 .fv-pt .l3 .w b{font-family:var(--en);font-size:1.15em;color:var(--kin-l)}
-.fv-pt .nt{font-size:11px;color:rgba(244,238,227,.55);margin-top:8px}
+.fv-pt .nt{font-size:12px;color:rgba(244,238,227,.55);margin-top:8px}
 .fv-mid{position:relative;margin-top:30px}
 .fv-copy{position:relative;z-index:2;font-family:var(--mincho);font-weight:800;font-size:clamp(22px,6vw,34px);line-height:1.65;letter-spacing:.06em;text-shadow:0 2px 10px rgba(0,0,0,.6)}
 .fv-copy em{font-style:normal;color:var(--kin-l)}
-.fv-sub{position:relative;z-index:2;font-size:14px;line-height:1.9;color:rgba(244,238,227,.75);margin-top:22px}
+.fv-sub{position:relative;z-index:2;font-size:15px;line-height:1.9;color:rgba(244,238,227,.75);margin-top:22px}
 .fv-don{position:absolute;z-index:1;right:-92px;top:-6px;width:62%;max-width:420px;filter:drop-shadow(0 18px 24px rgba(0,0,0,.55))}
 .fv-cta{position:relative;z-index:2;margin-top:34px}
 .fv-cta .vote-note{color:rgba(244,238,227,.6)}
@@ -95,42 +96,42 @@ a{color:inherit;text-decoration:none}
 
 /* ---------- 投票スタート帯 ---------- */
 .start{background:var(--kinari);padding:46px 24px 40px;text-align:center}
-.start .tag{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;color:#fff;background:var(--beni);padding:4px 14px}
+.start .tag{display:inline-block;font-size:14px;font-weight:700;letter-spacing:.14em;color:#fff;background:var(--beni);padding:4px 14px}
 .start h2{font-family:var(--mincho);font-weight:800;font-size:26px;line-height:1.6;letter-spacing:.06em;margin-top:16px}
 .start h2 b{color:var(--beni)}
-.period{display:inline-block;margin-top:20px;border:1px solid var(--kin);padding:12px 18px;font-size:14px;line-height:1.7}
+.period{display:inline-block;margin-top:20px;border:1px solid var(--kin);padding:12px 18px;font-size:15px;line-height:1.7}
 .period dt{font-weight:700;color:var(--beni);letter-spacing:.12em}
 
 /* ---------- 手紙 ---------- */
 .letter-sec{padding:12px 16px 56px}
 .letter-frame{padding:16px;background:repeating-linear-gradient(-45deg,var(--beni) 0 14px,var(--kinari) 14px 28px)}
-.letter{background:var(--kraft);background-image:radial-gradient(rgba(120,90,50,.08) 1px,transparent 1px);background-size:6px 6px;border:2px solid var(--beni-d);outline:1px solid rgba(125,21,17,.35);outline-offset:-8px;padding:38px 22px 34px;font-family:var(--hand);font-weight:600;font-size:16px;line-height:2.15;color:#3a2b20}
+.letter{background:var(--kraft);background-image:radial-gradient(rgba(120,90,50,.08) 1px,transparent 1px);background-size:6px 6px;border:2px solid var(--beni-d);outline:1px solid rgba(125,21,17,.35);outline-offset:-8px;padding:38px 22px 34px;font-family:var(--hand);font-weight:400;font-size:17px;line-height:2.1;color:#2e2219}
 .letter p+p{margin-top:1.1em}
 .letter .to{font-size:18px;color:var(--beni-d)}
 .letter mark{background:linear-gradient(transparent 62%,rgba(201,164,92,.55) 62%);color:inherit}
 .letter .sign{margin-top:1.6em;text-align:right;font-size:17px}
-.letter .sign small{display:block;font-size:13px;color:var(--ink-2)}
+.letter .sign small{display:block;font-size:14px;color:var(--ink-2)}
 
 /* ---------- 23年 ---------- */
 .years{background:var(--kuro);color:var(--kinari);padding:62px 24px 64px;position:relative}
-.years .big{display:flex;align-items:flex-end;justify-content:center;gap:10px;font-family:var(--mincho);font-weight:800}
+.years .big{display:flex;align-items:flex-end;justify-content:center;gap:10px;font-family:var(--head);font-weight:700}
 .years .big .n{font-family:var(--en);font-size:128px;line-height:.8;background:linear-gradient(180deg,#fff3cf,var(--kin-l) 40%,var(--kin) 75%,#9d7a36);-webkit-background-clip:text;background-clip:text;color:transparent}
 .years .big .u{font-size:30px;letter-spacing:.1em;padding-bottom:4px}
 .yline{position:relative;display:flex;justify-content:space-between;margin:42px auto 0;max-width:520px;padding-top:26px}
 .yline::before{content:"";position:absolute;top:8px;left:6px;right:6px;height:2px;background:linear-gradient(90deg,var(--kin),var(--kin-l))}
-.yline li{list-style:none;position:relative;text-align:center;font-size:13px;line-height:1.6;color:rgba(244,238,227,.75)}
+.yline li{list-style:none;position:relative;text-align:center;font-size:14px;line-height:1.6;color:rgba(244,238,227,.75)}
 .yline li::before{content:"";position:absolute;top:-24px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--kuro);border:2px solid var(--kin)}
 .yline li.now::before{background:var(--kin-l)}
 .yline b{display:block;font-family:var(--en);font-size:24px;color:var(--kin-l);letter-spacing:.04em}
-.years .msg{margin-top:40px;text-align:center;font-family:var(--mincho);font-size:17px;line-height:2.1;letter-spacing:.04em}
+.years .msg{margin-top:40px;text-align:center;font-family:var(--head);font-size:17px;line-height:2.1;letter-spacing:.04em}
 
 /* ---------- 2026年の挑戦 ---------- */
 .try{padding:64px 0 56px}
 .try-list{display:grid;gap:14px}
 .try-card{display:grid;grid-template-columns:64px 1fr;gap:16px;align-items:start;background:#fff;border:1px solid #e3d8c4;padding:20px 18px}
 .try-card .no{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:var(--beni);color:#fff;font-family:var(--en);font-weight:700;font-size:22px;line-height:1}
-.try-card h3{font-family:var(--mincho);font-weight:800;font-size:18px;line-height:1.5}
-.try-card p{font-size:14px;color:var(--ink-2);line-height:1.8;margin-top:6px}
+.try-card h3{font-family:var(--head);font-weight:700;font-size:18px;line-height:1.5}
+.try-card p{font-size:15px;color:var(--ink-2);line-height:1.8;margin-top:6px}
 
 /* ---------- 商品 ---------- */
 .items{background:#fff;padding:64px 0 60px}
@@ -139,28 +140,62 @@ a{color:inherit;text-decoration:none}
 .rk .ph{position:relative;display:block;aspect-ratio:1/1;background:#f3efe7}
 .rk .ph img{width:100%;height:100%;object-fit:contain}
 .rk .no{position:absolute;top:-8px;left:-8px;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--kuro);color:var(--kin-l);font-family:var(--en);font-weight:700;font-size:19px;border:2px solid var(--kin)}
-.rk h3{font-family:var(--mincho);font-weight:800;font-size:18px;line-height:1.5}
-.rk .c{font-size:13px;color:var(--ink-2);line-height:1.75;margin-top:6px}
+.rk h3{font-family:var(--head);font-weight:700;font-size:18px;line-height:1.5}
+.rk .c{font-size:14px;color:var(--ink-2);line-height:1.75;margin-top:6px}
 .rk .price{font-family:var(--en);font-weight:700;font-size:20px;margin-top:8px;color:var(--beni)}
-.rk .price small{white-space:nowrap;font-family:var(--sans);font-size:11px;font-weight:500;color:var(--ink-2);margin-left:2px}
-.rk .go{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;border-bottom:1px solid var(--ink);padding-bottom:2px}
-.sub-head{display:flex;align-items:center;gap:14px;margin:52px 0 22px;font-family:var(--mincho);font-weight:800;font-size:19px;letter-spacing:.06em}
+.rk .price small{white-space:nowrap;font-family:var(--sans);font-size:12px;font-weight:500;color:var(--ink-2);margin-left:2px}
+.rk .go{display:inline-block;margin-top:10px;font-size:14px;font-weight:700;border-bottom:1px solid var(--ink);padding-bottom:2px}
+.sub-head{display:flex;align-items:center;gap:14px;margin:52px 0 22px;font-family:var(--head);font-weight:700;font-size:19px;letter-spacing:.06em}
 .sub-head::before,.sub-head::after{content:"";flex:1;height:1px;background:var(--kin)}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px 14px}
 .it .ph{display:block;aspect-ratio:1/1;background:#f3efe7}
 .it .ph img{width:100%;height:100%;object-fit:contain}
-.it h4{font-size:14px;font-weight:700;line-height:1.55;margin-top:10px}
+.it h4{font-size:15px;font-weight:700;line-height:1.55;margin-top:10px}
 .it .price{font-family:var(--en);font-weight:700;font-size:17px;color:var(--beni);margin-top:2px}
-.it .price small{font-family:var(--sans);font-size:11px;font-weight:500;color:var(--ink-2)}
-.it .tg{font-size:11px;color:var(--ink-2);line-height:1.6}
+.it .price small{font-family:var(--sans);font-size:12px;font-weight:500;color:var(--ink-2)}
+.it .tg{font-size:12px;color:var(--ink-2);line-height:1.6}
 .shop-link{display:flex;justify-content:center;margin-top:42px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 34px;border:1px solid var(--ink);font-family:var(--mincho);font-weight:700;font-size:16px;letter-spacing:.1em;transition:background .25s,color .25s}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 34px;border:1px solid var(--ink);font-family:var(--head);font-weight:700;font-size:16px;letter-spacing:.1em;transition:background .25s,color .25s}
 .btn:hover{background:var(--ink);color:var(--kinari)}
+
+/* ---------- 決算大感謝祭 ---------- */
+.kessan{background:var(--beni);background-image:radial-gradient(rgba(255,255,255,.07) 1.5px,transparent 1.5px);background-size:14px 14px;color:#fff;padding:60px 0 56px}
+.ks-title{text-align:center}
+.ks-title .en{display:block;font-size:15px;letter-spacing:.24em;color:var(--kin-l)}
+.ks-title h2{font-family:var(--head);font-weight:900;font-size:clamp(34px,10vw,52px);line-height:1.3;letter-spacing:.08em;margin-top:8px}
+.ks-title h2 small{display:block;font-size:.46em;letter-spacing:.14em;color:var(--kin-l)}
+.ks-period{display:inline-block;margin-top:14px;background:var(--kuro);color:var(--kin-l);font-size:15px;font-weight:700;padding:6px 16px;letter-spacing:.04em}
+.ks-period b{font-family:var(--en);font-size:19px;color:#fff}
+.ks-lot{margin-top:30px;background:var(--kinari);color:var(--ink);padding:24px 18px 20px;text-align:center;border:3px solid var(--kin)}
+.ks-lot .tg{display:inline-block;font-size:14px;font-weight:700;color:#fff;background:var(--kuro);padding:3px 12px}
+.ks-lot h3{font-weight:900;font-size:clamp(26px,7.6vw,36px);line-height:1.3;margin-top:10px}
+.ks-lot h3 b{font-family:var(--en);font-size:1.5em;color:var(--beni)}
+.ks-lot .s{font-size:15px;color:var(--ink-2);margin-top:4px}
+.prizes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}
+.prizes li{list-style:none;background:#fff;border:1px solid #e3d8c4;padding:10px 4px 8px;line-height:1.35}
+.prizes .r{display:block;font-family:var(--en);font-weight:700;font-size:22px;color:var(--beni)}
+.prizes .r small{font-family:var(--sans);font-size:13px}
+.prizes .g{display:block;font-size:14px;font-weight:700;margin-top:4px}
+.prizes .n{display:block;font-size:13px;color:var(--ink-2)}
+.ks-sch{margin-top:24px;display:grid;gap:8px}
+.ks-sch li{list-style:none;display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:center;background:#fff;color:var(--ink);padding:10px 12px 10px 10px}
+.ks-sch .ph{aspect-ratio:1/1;background:#f3efe7}
+.ks-sch .ph img{width:100%;height:100%;object-fit:cover}
+.ks-sch .ph.ic{display:grid;place-items:center;background:var(--kuro);color:var(--kin-l);font-family:var(--en);font-weight:700;font-size:15px;line-height:1.1;text-align:center}
+.ks-sch .k{display:inline-block;font-size:13px;font-weight:700;color:#fff;background:var(--beni);padding:1px 8px}
+.ks-sch .k.bf{background:var(--kuro)}
+.ks-sch h3{font-size:16px;font-weight:900;line-height:1.45;margin-top:4px}
+.ks-sch h3 em{font-style:normal;color:var(--beni)}
+.ks-sch .d{font-size:13px;color:var(--ink-2);line-height:1.5}
+.ks-go{margin-top:30px}
+.ks-go .vote{background:linear-gradient(180deg,#fff 0%,var(--kinari) 100%);box-shadow:0 5px 0 var(--beni-d),0 10px 22px rgba(0,0,0,.25)}
+.ks-go .vote.off{pointer-events:none}
+.ks-go .vote-note{color:rgba(255,255,255,.8)}
 
 /* ---------- 声 ---------- */
 .voice{padding:64px 0 60px}
 .bubbles{display:grid;gap:14px}
-.bb{position:relative;background:#fff;border:1px solid #e3d8c4;border-radius:18px;padding:14px 18px;font-family:var(--hand);font-weight:600;font-size:15px;line-height:1.7}
+.bb{position:relative;background:#fff;border:1px solid #e3d8c4;border-radius:18px;padding:14px 18px;font-family:var(--hand);font-weight:400;font-size:17px;line-height:1.7}
 .bb::after{content:"";position:absolute;bottom:-9px;width:16px;height:16px;background:#fff;border-right:1px solid #e3d8c4;border-bottom:1px solid #e3d8c4;transform:rotate(45deg)}
 .bb:nth-child(odd){margin-right:20px}
 .bb:nth-child(odd)::after{left:34px}
@@ -172,16 +207,16 @@ a{color:inherit;text-decoration:none}
 .how{background:var(--kraft);padding:60px 0 56px}
 .steps{display:grid;gap:12px;counter-reset:st}
 .steps li{list-style:none;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;background:#fff;padding:18px 18px}
-.steps .sn{font-family:var(--en);font-weight:700;font-size:13px;letter-spacing:.1em;color:var(--beni);text-align:center;line-height:1.1}
+.steps .sn{font-family:var(--en);font-weight:700;font-size:14px;letter-spacing:.1em;color:var(--beni);text-align:center;line-height:1.1}
 .steps .sn b{display:block;font-size:30px;color:var(--ink)}
 .steps h3{font-size:16px;font-weight:700;line-height:1.5}
-.steps p{font-size:13px;color:var(--ink-2);line-height:1.7;margin-top:2px}
+.steps p{font-size:14px;color:var(--ink-2);line-height:1.7;margin-top:2px}
 
 /* ---------- 締め ---------- */
 .last{position:relative;background:linear-gradient(180deg,var(--beni) 0%,var(--beni-d) 100%);color:var(--kinari);padding:64px 24px 60px;text-align:center;overflow:hidden}
 .last .in2{position:relative;z-index:2}
-.last .en{font-size:14px;letter-spacing:.24em;color:var(--kin-l)}
-.last h2{font-family:var(--mincho);font-weight:800;font-size:28px;line-height:1.6;letter-spacing:.06em;margin:12px 0 30px}
+.last .en{font-size:15px;letter-spacing:.24em;color:var(--kin-l)}
+.last h2{font-family:var(--head);font-weight:700;font-size:28px;line-height:1.6;letter-spacing:.06em;margin:12px 0 30px}
 .last .vote-note{color:rgba(244,238,227,.72)}
 
 /* ---------- 追従ボタン ---------- */
@@ -193,7 +228,7 @@ a{color:inherit;text-decoration:none}
   .in{padding:0 48px}
   .fv{padding:28px 48px 56px}
   .fv-open{flex-direction:row;justify-content:space-between;padding:12px 28px 14px}
-  .fv-open .dl{flex-direction:column;align-items:center;gap:2px;font-size:14px;border-top:0;border-left:1px solid rgba(234,210,154,.45);padding:0 0 0 22px}
+  .fv-open .dl{flex-direction:column;align-items:center;gap:2px;font-size:15px;border-top:0;border-left:1px solid rgba(234,210,154,.45);padding:0 0 0 22px}
   .fv-open .dl .d{font-size:36px}
   .fv-pt{padding:22px 20px 18px}
   .fv-pt .l1{font-size:16px}
@@ -204,11 +239,11 @@ a{color:inherit;text-decoration:none}
   .start h2{font-size:30px}
   .letter-sec{padding:12px 48px 64px}
   .letter-frame{padding:20px}
-  .letter{padding:52px 48px 46px;font-size:17px}
+  .letter{padding:52px 48px 46px;font-size:18px}
   .try-list{grid-template-columns:1fr}
   .rk{grid-template-columns:38% 1fr;gap:28px}
   .rk h3{font-size:21px}
-  .rk .c{font-size:14px}
+  .rk .c{font-size:15px}
   .grid{grid-template-columns:repeat(4,1fr)}
   .bb:nth-child(odd){margin-right:140px}
   .bb:nth-child(even){margin-left:140px}
@@ -349,6 +384,42 @@ a{color:inherit;text-decoration:none}
     </div>
   </section>
 
+  <!-- ===== 決算大感謝祭 ===== -->
+  <section class="kessan" id="kessan">
+    <div class="in">
+      <div class="ks-title">
+        <span class="en">NOVEMBER SPECIAL</span>
+        <h2><small>11月はもうひとつのお楽しみ</small>決算大感謝祭</h2>
+        <p class="ks-period"><b>11/4</b>(水)20:00 〜 <b>11/27</b>(金)13:59</p>
+      </div>
+
+      <div class="ks-lot">
+        <span class="tg">購入者限定・エントリー不要</span>
+        <h3>うなぎ<b>10</b>尾<br>当たる！？</h3>
+        <p class="s">期間中にお買い物いただいた方全員を自動でエントリー</p>
+        <ul class="prizes">
+          <li><span class="r">1<small>等</small></span><span class="g">長焼き170g×10尾</span><span class="n">1名様</span></li>
+          <li><span class="r">2<small>等</small></span><span class="g">長焼き150g×5尾</span><span class="n">3名様</span></li>
+          <li><span class="r">3<small>等</small></span><span class="g">長焼き120g×3尾</span><span class="n">6名様</span></li>
+        </ul>
+      </div>
+
+      <ol class="ks-sch">
+        <li><span class="ph"><img src="https://shop.r10s.jp/kawasui/cabinet/s-set/s-fuku-select_601.jpg" alt="伝説の福袋" loading="lazy"></span><div><span class="k">セール第一弾</span><h3>伝説の福袋 <em>復活！</em>・お重箱</h3><p class="d">11/4(水)20:00 〜 11/13(金)13:59</p></div></li>
+        <li><span class="ph"><img src="https://shop.r10s.jp/kawasui/cabinet/ncimag00/s-kb2003sn_601.jpg" alt="超特大 長焼き" loading="lazy"></span><div><span class="k">お買い物マラソン</span><h3><em>最大3,000円OFF</em><br>超特大長焼き・常温蒲焼き</h3><p class="d">11/4(水)20:00 〜 11/11(水)01:59</p></div></li>
+        <li><span class="ph ic">11/9<br>P10</span><div><span class="k">店長誕生日</span><h3>店内全品 <em>ポイント10倍</em></h3><p class="d">11/9(月) 1日限定・エントリー不要</p></div></li>
+        <li><span class="ph"><img src="https://shop.r10s.jp/kawasui/cabinet/ncimag00/cut6300sn_601.jpg" alt="蒲焼きカット6枚セット" loading="lazy"></span><div><span class="k">マラソンラスト5時間</span><h3>蒲焼きカット6枚 <em>22%OFF</em></h3><p class="d">11/10(火)21:00 〜 11/11(水)01:59</p></div></li>
+        <li><span class="ph"><img src="https://shop.r10s.jp/kawasui/cabinet/ncimag00/cutall-500_601.jpg" alt="蒲焼きカット大容量" loading="lazy"></span><div><span class="k">セール第二弾</span><h3><em>最大37%OFF</em><br>蒲焼きカット大容量・白焼き</h3><p class="d">11/13(金)14:00 〜 11/20(金)13:59</p></div></li>
+        <li><span class="ph ic">BLACK<br>FRIDAY</span><div><span class="k bf">セール第三弾</span><h3>ブラックフライデー<br><em>とっておき企画</em></h3><p class="d">11/19(木)20:00 〜 11/27(金)13:59<br>内容は11/13(金)10:00公開</p></div></li>
+      </ol>
+
+      <div class="ks-go">
+        <a class="vote" id="kessan-go" href="#">決算大感謝祭ページへGO<span class="arw">▶</span></a>
+        <p class="vote-note">セール価格・クーポンは各期間内のご注文が対象です</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== お声 ===== -->
   <section class="voice">
     <div class="in">
@@ -360,7 +431,7 @@ a{color:inherit;text-decoration:none}
       <div class="bubbles">
         <p class="bb">こんな企画を、またやってほしい</p>
         <p class="bb">こんな商品があったらうれしいな</p>
-        <p class="bb">いつもおいしいうなぎをありがとう</p>
+        <p class="bb">おいしいうなぎをありがとう</p>
         <p class="bb">家族みんなで楽しみにしています</p>
       </div>
       <p class="after">いただいたご意見や温かいメッセージは<br>スタッフ一同の大きな励みになります</p>
@@ -407,6 +478,16 @@ a{color:inherit;text-decoration:none}
     a.target = '_blank';
     a.rel = 'noopener';
   });
+
+  // ▼決算大感謝祭ページURL（公開されたらここに入れる。空の間はボタンを「近日公開」表示）
+  var KESSAN_URL = '';
+  var kg = document.getElementById('kessan-go');
+  if (KESSAN_URL) {
+    kg.href = KESSAN_URL;
+  } else {
+    kg.classList.add('off');
+    kg.firstChild.nodeValue = '決算大感謝祭ページ 近日公開';
+  }
 
   // 投票ボタンのシャイン（ランダム間隔）
   function shine(){
