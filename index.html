@@ -58,12 +58,25 @@ a{color:inherit;text-decoration:none}
 .fv-top{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:.16em;color:rgba(244,238,227,.6);border-bottom:1px solid rgba(201,164,92,.35);padding-bottom:14px}
 .fv-top b{font-family:var(--mincho);font-size:15px;color:var(--kinari);letter-spacing:.2em}
 .fv-body{position:relative;z-index:2;margin-top:30px}
-.fv-title{font-family:var(--en);font-weight:700;line-height:.98;letter-spacing:.01em;font-size:clamp(46px,12.4vw,82px)}
-.fv-title .yr{display:block;font-size:1.62em;line-height:1;margin-top:.1em;background:linear-gradient(180deg,#fff3cf 0%,var(--kin-l) 38%,var(--kin) 70%,#9d7a36 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-.fv-badge{display:inline-flex;align-items:center;gap:12px;margin-top:20px;background:var(--beni);border:1px solid var(--kin);padding:8px 16px;line-height:1.2}
-.fv-badge .s{font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--kin-l);padding-right:12px;border-right:1px solid rgba(234,210,154,.5)}
-.fv-badge .d{font-family:var(--en);font-weight:700;font-size:28px;line-height:1;padding-top:4px}
-.fv-badge .t{font-size:12px;font-weight:700;letter-spacing:.06em}
+.fv-title{font-family:var(--en);font-weight:700;line-height:.98;letter-spacing:.01em;font-size:clamp(40px,11vw,72px)}
+.fv-title .yr{display:block;font-size:1.5em;line-height:1;margin-top:.1em;background:linear-gradient(180deg,#fff3cf 0%,var(--kin-l) 38%,var(--kin) 70%,#9d7a36 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fv-title .rk{display:block;font-size:.34em;letter-spacing:.3em;color:var(--kin-l);margin-bottom:.5em}
+/* 「投票受付中！」帯：タイトルと一続きで読ませる */
+.fv-open{display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:14px;background:var(--beni);border-top:2px solid var(--kin);border-bottom:2px solid var(--kin);padding:10px 14px 12px;box-shadow:0 8px 20px rgba(0,0,0,.35)}
+.fv-open .o{white-space:nowrap;font-weight:900;font-size:clamp(40px,12.4vw,60px);line-height:1.1;letter-spacing:.04em;color:#fff;text-shadow:0 2px 0 var(--beni-d)}
+.fv-open .o b{color:var(--kin-l)}
+.fv-open .dl{flex:none;display:flex;align-items:baseline;gap:6px;font-size:14px;font-weight:700;letter-spacing:.04em;color:var(--kin-l);border-top:1px solid rgba(234,210,154,.45);padding-top:6px}
+.fv-open .dl .d{font-family:var(--en);font-size:28px;color:#fff;line-height:1}
+/* 投票ポイント */
+.fv-pt{margin-top:18px;border:1px solid var(--kin);background:rgba(201,164,92,.1);padding:16px 14px 14px;text-align:center;line-height:1.5}
+.fv-pt .l1{font-size:14px;font-weight:700;color:var(--kin-l);letter-spacing:.04em}
+.fv-pt .l2{font-size:15px;font-weight:700;margin-top:6px}
+.fv-pt .l3{font-weight:900;font-size:clamp(22px,6.6vw,34px);line-height:1.35;margin-top:4px}
+.fv-pt .l3 .p{font-family:var(--en);font-size:1.5em;line-height:1;color:var(--kin-l);letter-spacing:.01em}
+.fv-pt .l3 .p small{font-family:var(--sans);font-size:.6em}
+.fv-pt .l3 .w{display:block}
+.fv-pt .l3 .w b{font-family:var(--en);font-size:1.15em;color:var(--kin-l)}
+.fv-pt .nt{font-size:11px;color:rgba(244,238,227,.55);margin-top:8px}
 .fv-mid{position:relative;margin-top:30px}
 .fv-copy{position:relative;z-index:2;font-family:var(--mincho);font-weight:800;font-size:clamp(22px,6vw,34px);line-height:1.65;letter-spacing:.06em;text-shadow:0 2px 10px rgba(0,0,0,.6)}
 .fv-copy em{font-style:normal;color:var(--kin-l)}
@@ -179,10 +192,12 @@ a{color:inherit;text-decoration:none}
 @media (min-width:768px){
   .in{padding:0 48px}
   .fv{padding:28px 48px 56px}
-  .fv-badge{position:absolute;top:0;right:0;width:168px;height:168px;margin:0;padding:0;border-radius:50%;border-width:2px;box-shadow:0 0 0 6px var(--kuro),0 0 0 7px rgba(201,164,92,.6);flex-direction:column;justify-content:center;gap:0;text-align:center}
-  .fv-badge .s{border:0;padding:0}
-  .fv-badge .d{font-size:42px;margin-top:6px}
-  .fv-badge .t{margin-top:2px}
+  .fv-open{flex-direction:row;justify-content:space-between;padding:12px 28px 14px}
+  .fv-open .dl{flex-direction:column;align-items:center;gap:2px;font-size:14px;border-top:0;border-left:1px solid rgba(234,210,154,.45);padding:0 0 0 22px}
+  .fv-open .dl .d{font-size:36px}
+  .fv-pt{padding:22px 20px 18px}
+  .fv-pt .l1{font-size:16px}
+  .fv-pt .l2{font-size:18px}
   .fv-sub{font-size:15px}
   .fv-don{right:-40px;top:-60px;width:56%}
   .head h2{font-size:32px}
@@ -212,12 +227,13 @@ a{color:inherit;text-decoration:none}
     <div class="confetti" data-confetti="34"></div>
     <div class="fv-top"><b>うなぎ屋かわすい</b><span>楽天市場 出店23年目</span></div>
     <div class="fv-body">
-      <h1 class="fv-title">RAKUTEN<br>SHOP OF<br>THE YEAR<span class="yr">2026</span></h1>
-      <div class="fv-badge">
-        <span class="s">投票受付中</span>
-        <!-- ▼要確認：投票締切日時 -->
-        <span class="d">11.30</span>
-        <span class="t">AM9:59まで</span>
+      <h1 class="fv-title"><span class="rk">RAKUTEN</span>SHOP OF<br>THE YEAR<span class="yr">2026</span></h1>
+      <p class="fv-open"><span class="o">投票受付中<b>！</b></span><span class="dl">投票は<span class="d">11.30</span>(月)09:59まで</span></p>
+      <div class="fv-pt">
+        <p class="l1">あなたの1票でベストショップが決まる！</p>
+        <p class="l2">お気に入りのショップに投票すると</p>
+        <p class="l3">最大<span class="p">10,000<small>ポイント</small></span>が<span class="w"><b>10</b>万名様に当たる！</span></p>
+        <p class="nt">※詳細は楽天市場の投票ページをご確認ください</p>
       </div>
       <div class="fv-mid">
         <p class="fv-copy">23年分の<br><em>ありがとう</em>をこめて<br>あなたの一票を<br>お待ちしています</p>
@@ -235,8 +251,7 @@ a{color:inherit;text-decoration:none}
   <section class="start">
     <span class="tag">11月1日 START</span>
     <h2>楽天市場<br><b>「ショップ・オブ・ザ・イヤー2026」</b><br>の投票が始まりました</h2>
-    <!-- ▼要確認：投票期間 -->
-    <dl class="period"><dt>投票期間</dt><dd>2026年11月1日（日）10:00 〜<br>11月30日（月）9:59</dd></dl>
+    <dl class="period"><dt>投票期間</dt><dd>2026年11月1日（日）〜<br>11月30日（月）09:59まで</dd></dl>
   </section>
 
   <!-- ===== お手紙 ===== -->
@@ -374,8 +389,7 @@ a{color:inherit;text-decoration:none}
       <span class="en">THANK YOU FOR YOUR SUPPORT</span>
       <h2>うなぎ屋かわすいに<br>あなたの一票を</h2>
       <a class="vote" data-vote href="#">うなぎ屋かわすいに投票する<span class="arw">▶</span></a>
-      <!-- ▼要確認：投票期間 -->
-      <p class="vote-note">投票期間<br>2026年11月1日（日）10:00 〜 11月30日（月）9:59</p>
+      <p class="vote-note">投票は11月30日（月）09:59まで<br>投票すると最大10,000ポイントが10万名様に当たる！</p>
     </div>
   </section>
 
