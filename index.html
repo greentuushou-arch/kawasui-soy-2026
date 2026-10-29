@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>うなぎ屋かわすいへ応援よろしくお願いします｜ショップ・オブ・ザ・イヤー2026 投票受付中</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700;900&family=Josefin+Sans:wght@600;700&family=Klee+One:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --kuro:#17110d;      /* 漆黒 */
+  --sumi:#2a1d16;
+  --beni:#a3201a;      /* 紅 */
+  --beni-d:#7d1511;
+  --kin:#c9a45c;       /* 金 */
+  --kin-l:#ead29a;
+  --kinari:#f4eee3;    /* 生成り */
+  --kraft:#ecdfc6;     /* 便箋 */
+  --ink:#231c17;
+  --ink-2:#5e544b;
+  --mincho:"Shippori Mincho B1",serif;
+  --sans:"Noto Sans JP",sans-serif;
+  --en:"Josefin Sans","Noto Sans JP",sans-serif;
+  --hand:"Klee One","Noto Sans JP",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#d9cfbf;color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.9;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:750px;margin:0 auto;background:var(--kinari);overflow:hidden;padding-bottom:84px}
+.in{padding:0 24px}
+.en{font-family:var(--en);letter-spacing:.06em}
+
+/* ---------- 共通見出し ---------- */
+.head{text-align:center;margin-bottom:34px}
+.head .en{display:block;font-size:14px;letter-spacing:.24em;color:var(--beni)}
+.head h2{font-family:var(--mincho);font-weight:800;font-size:27px;line-height:1.5;letter-spacing:.06em;margin-top:10px}
+.head h2::after{content:"";display:block;width:44px;height:2px;background:var(--kin);margin:18px auto 0}
+.head .lead{margin-top:16px;font-size:15px;color:var(--ink-2)}
+.dark .head .en{color:var(--kin-l)}
+.dark .head h2{color:var(--kinari)}
+.dark .head .lead{color:rgba(244,238,227,.72)}
+
+/* ---------- 投票ボタン（シャイン） ---------- */
+.vote{position:relative;display:flex;align-items:center;justify-content:center;gap:12px;width:100%;max-width:520px;min-height:72px;margin:0 auto;padding:0 20px;border-radius:999px;background:linear-gradient(180deg,#f0d898 0%,var(--kin) 55%,#a9853f 100%);color:var(--kuro);font-weight:900;font-size:17px;letter-spacing:.04em;box-shadow:0 5px 0 #7d6127,0 10px 22px rgba(0,0,0,.28);overflow:hidden;transition:transform .15s,box-shadow .15s}
+.vote:active{transform:translateY(3px);box-shadow:0 2px 0 #7d6127,0 5px 12px rgba(0,0,0,.25)}
+.vote .arw{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--kuro);color:var(--kin-l);font-size:13px;flex:none}
+.vote::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.75),transparent);transform:skewX(-20deg);pointer-events:none}
+.vote.kw-shine-play::after{animation:shine 1.6s ease-in-out}
+@keyframes shine{to{left:130%}}
+.vote-note{text-align:center;font-size:12px;color:var(--ink-2);margin-top:14px;line-height:1.7}
+.dark .vote-note{color:rgba(244,238,227,.6)}
+
+/* ---------- FV ---------- */
+.fv{position:relative;background:radial-gradient(120% 80% at 80% 100%,#3a2216 0%,var(--kuro) 62%);color:#fff;padding:22px 24px 40px;overflow:hidden}
+.fv-top{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:.16em;color:rgba(244,238,227,.6);border-bottom:1px solid rgba(201,164,92,.35);padding-bottom:14px}
+.fv-top b{font-family:var(--mincho);font-size:15px;color:var(--kinari);letter-spacing:.2em}
+.fv-body{position:relative;z-index:2;margin-top:30px}
+.fv-title{font-family:var(--en);font-weight:700;line-height:.98;letter-spacing:.01em;font-size:clamp(46px,12.4vw,82px)}
+.fv-title .yr{display:block;font-size:1.62em;line-height:1;margin-top:.1em;background:linear-gradient(180deg,#fff3cf 0%,var(--kin-l) 38%,var(--kin) 70%,#9d7a36 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fv-badge{display:inline-flex;align-items:center;gap:12px;margin-top:20px;background:var(--beni);border:1px solid var(--kin);padding:8px 16px;line-height:1.2}
+.fv-badge .s{font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--kin-l);padding-right:12px;border-right:1px solid rgba(234,210,154,.5)}
+.fv-badge .d{font-family:var(--en);font-weight:700;font-size:28px;line-height:1;padding-top:4px}
+.fv-badge .t{font-size:12px;font-weight:700;letter-spacing:.06em}
+.fv-mid{position:relative;margin-top:30px}
+.fv-copy{position:relative;z-index:2;font-family:var(--mincho);font-weight:800;font-size:clamp(22px,6vw,34px);line-height:1.65;letter-spacing:.06em;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+.fv-copy em{font-style:normal;color:var(--kin-l)}
+.fv-sub{position:relative;z-index:2;font-size:14px;line-height:1.9;color:rgba(244,238,227,.75);margin-top:22px}
+.fv-don{position:absolute;z-index:1;right:-92px;top:-6px;width:62%;max-width:420px;filter:drop-shadow(0 18px 24px rgba(0,0,0,.55))}
+.fv-cta{position:relative;z-index:2;margin-top:34px}
+.fv-cta .vote-note{color:rgba(244,238,227,.6)}
+
+/* 紙吹雪 */
+.confetti{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.confetti span{position:absolute;top:-30px;border-radius:1px;opacity:.95;animation:fall linear infinite}
+@keyframes fall{
+  0%{transform:translate3d(0,0,0) rotate(0) rotateY(0)}
+  100%{transform:translate3d(var(--kw-drift,30px),var(--kw-fall,900px),0) rotate(540deg) rotateY(720deg)}
+}
+
+/* ---------- 投票スタート帯 ---------- */
+.start{background:var(--kinari);padding:46px 24px 40px;text-align:center}
+.start .tag{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;color:#fff;background:var(--beni);padding:4px 14px}
+.start h2{font-family:var(--mincho);font-weight:800;font-size:26px;line-height:1.6;letter-spacing:.06em;margin-top:16px}
+.start h2 b{color:var(--beni)}
+.period{display:inline-block;margin-top:20px;border:1px solid var(--kin);padding:12px 18px;font-size:14px;line-height:1.7}
+.period dt{font-weight:700;color:var(--beni);letter-spacing:.12em}
+
+/* ---------- 手紙 ---------- */
+.letter-sec{padding:12px 16px 56px}
+.letter-frame{padding:16px;background:repeating-linear-gradient(-45deg,var(--beni) 0 14px,var(--kinari) 14px 28px)}
+.letter{background:var(--kraft);background-image:radial-gradient(rgba(120,90,50,.08) 1px,transparent 1px);background-size:6px 6px;border:2px solid var(--beni-d);outline:1px solid rgba(125,21,17,.35);outline-offset:-8px;padding:38px 22px 34px;font-family:var(--hand);font-weight:600;font-size:16px;line-height:2.15;color:#3a2b20}
+.letter p+p{margin-top:1.1em}
+.letter .to{font-size:18px;color:var(--beni-d)}
+.letter mark{background:linear-gradient(transparent 62%,rgba(201,164,92,.55) 62%);color:inherit}
+.letter .sign{margin-top:1.6em;text-align:right;font-size:17px}
+.letter .sign small{display:block;font-size:13px;color:var(--ink-2)}
+
+/* ---------- 23年 ---------- */
+.years{background:var(--kuro);color:var(--kinari);padding:62px 24px 64px;position:relative}
+.years .big{display:flex;align-items:flex-end;justify-content:center;gap:10px;font-family:var(--mincho);font-weight:800}
+.years .big .n{font-family:var(--en);font-size:128px;line-height:.8;background:linear-gradient(180deg,#fff3cf,var(--kin-l) 40%,var(--kin) 75%,#9d7a36);-webkit-background-clip:text;background-clip:text;color:transparent}
+.years .big .u{font-size:30px;letter-spacing:.1em;padding-bottom:4px}
+.yline{position:relative;display:flex;justify-content:space-between;margin:42px auto 0;max-width:520px;padding-top:26px}
+.yline::before{content:"";position:absolute;top:8px;left:6px;right:6px;height:2px;background:linear-gradient(90deg,var(--kin),var(--kin-l))}
+.yline li{list-style:none;position:relative;text-align:center;font-size:13px;line-height:1.6;color:rgba(244,238,227,.75)}
+.yline li::before{content:"";position:absolute;top:-24px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--kuro);border:2px solid var(--kin)}
+.yline li.now::before{background:var(--kin-l)}
+.yline b{display:block;font-family:var(--en);font-size:24px;color:var(--kin-l);letter-spacing:.04em}
+.years .msg{margin-top:40px;text-align:center;font-family:var(--mincho);font-size:17px;line-height:2.1;letter-spacing:.04em}
+
+/* ---------- 2026年の挑戦 ---------- */
+.try{padding:64px 0 56px}
+.try-list{display:grid;gap:14px}
+.try-card{display:grid;grid-template-columns:64px 1fr;gap:16px;align-items:start;background:#fff;border:1px solid #e3d8c4;padding:20px 18px}
+.try-card .no{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:var(--beni);color:#fff;font-family:var(--en);font-weight:700;font-size:22px;line-height:1}
+.try-card h3{font-family:var(--mincho);font-weight:800;font-size:18px;line-height:1.5}
+.try-card p{font-size:14px;color:var(--ink-2);line-height:1.8;margin-top:6px}
+
+/* ---------- 商品 ---------- */
+.items{background:#fff;padding:64px 0 60px}
+.rank{display:grid;gap:22px}
+.rk{display:grid;grid-template-columns:42% 1fr;gap:16px;align-items:center}
+.rk .ph{position:relative;display:block;aspect-ratio:1/1;background:#f3efe7}
+.rk .ph img{width:100%;height:100%;object-fit:contain}
+.rk .no{position:absolute;top:-8px;left:-8px;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--kuro);color:var(--kin-l);font-family:var(--en);font-weight:700;font-size:19px;border:2px solid var(--kin)}
+.rk h3{font-family:var(--mincho);font-weight:800;font-size:18px;line-height:1.5}
+.rk .c{font-size:13px;color:var(--ink-2);line-height:1.75;margin-top:6px}
+.rk .price{font-family:var(--en);font-weight:700;font-size:20px;margin-top:8px;color:var(--beni)}
+.rk .price small{white-space:nowrap;font-family:var(--sans);font-size:11px;font-weight:500;color:var(--ink-2);margin-left:2px}
+.rk .go{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;border-bottom:1px solid var(--ink);padding-bottom:2px}
+.sub-head{display:flex;align-items:center;gap:14px;margin:52px 0 22px;font-family:var(--mincho);font-weight:800;font-size:19px;letter-spacing:.06em}
+.sub-head::before,.sub-head::after{content:"";flex:1;height:1px;background:var(--kin)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px 14px}
+.it .ph{display:block;aspect-ratio:1/1;background:#f3efe7}
+.it .ph img{width:100%;height:100%;object-fit:contain}
+.it h4{font-size:14px;font-weight:700;line-height:1.55;margin-top:10px}
+.it .price{font-family:var(--en);font-weight:700;font-size:17px;color:var(--beni);margin-top:2px}
+.it .price small{font-family:var(--sans);font-size:11px;font-weight:500;color:var(--ink-2)}
+.it .tg{font-size:11px;color:var(--ink-2);line-height:1.6}
+.shop-link{display:flex;justify-content:center;margin-top:42px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 34px;border:1px solid var(--ink);font-family:var(--mincho);font-weight:700;font-size:16px;letter-spacing:.1em;transition:background .25s,color .25s}
+.btn:hover{background:var(--ink);color:var(--kinari)}
+
+/* ---------- 声 ---------- */
+.voice{padding:64px 0 60px}
+.bubbles{display:grid;gap:14px}
+.bb{position:relative;background:#fff;border:1px solid #e3d8c4;border-radius:18px;padding:14px 18px;font-family:var(--hand);font-weight:600;font-size:15px;line-height:1.7}
+.bb::after{content:"";position:absolute;bottom:-9px;width:16px;height:16px;background:#fff;border-right:1px solid #e3d8c4;border-bottom:1px solid #e3d8c4;transform:rotate(45deg)}
+.bb:nth-child(odd){margin-right:20px}
+.bb:nth-child(odd)::after{left:34px}
+.bb:nth-child(even){margin-left:20px}
+.bb:nth-child(even)::after{right:34px}
+.voice .after{text-align:center;margin-top:34px;font-size:15px;line-height:2}
+
+/* ---------- 投票方法 ---------- */
+.how{background:var(--kraft);padding:60px 0 56px}
+.steps{display:grid;gap:12px;counter-reset:st}
+.steps li{list-style:none;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;background:#fff;padding:18px 18px}
+.steps .sn{font-family:var(--en);font-weight:700;font-size:13px;letter-spacing:.1em;color:var(--beni);text-align:center;line-height:1.1}
+.steps .sn b{display:block;font-size:30px;color:var(--ink)}
+.steps h3{font-size:16px;font-weight:700;line-height:1.5}
+.steps p{font-size:13px;color:var(--ink-2);line-height:1.7;margin-top:2px}
+
+/* ---------- 締め ---------- */
+.last{position:relative;background:linear-gradient(180deg,var(--beni) 0%,var(--beni-d) 100%);color:var(--kinari);padding:64px 24px 60px;text-align:center;overflow:hidden}
+.last .in2{position:relative;z-index:2}
+.last .en{font-size:14px;letter-spacing:.24em;color:var(--kin-l)}
+.last h2{font-family:var(--mincho);font-weight:800;font-size:28px;line-height:1.6;letter-spacing:.06em;margin:12px 0 30px}
+.last .vote-note{color:rgba(244,238,227,.72)}
+
+/* ---------- 追従ボタン ---------- */
+.fixed{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(23,17,13,.92);transform:translateY(110%);transition:transform .35s}
+.fixed.on{transform:none}
+.fixed .vote{min-height:56px;font-size:16px;box-shadow:0 3px 0 #7d6127}
+
+@media (min-width:768px){
+  .in{padding:0 48px}
+  .fv{padding:28px 48px 56px}
+  .fv-badge{position:absolute;top:0;right:0;width:168px;height:168px;margin:0;padding:0;border-radius:50%;border-width:2px;box-shadow:0 0 0 6px var(--kuro),0 0 0 7px rgba(201,164,92,.6);flex-direction:column;justify-content:center;gap:0;text-align:center}
+  .fv-badge .s{border:0;padding:0}
+  .fv-badge .d{font-size:42px;margin-top:6px}
+  .fv-badge .t{margin-top:2px}
+  .fv-sub{font-size:15px}
+  .fv-don{right:-40px;top:-60px;width:56%}
+  .head h2{font-size:32px}
+  .start h2{font-size:30px}
+  .letter-sec{padding:12px 48px 64px}
+  .letter-frame{padding:20px}
+  .letter{padding:52px 48px 46px;font-size:17px}
+  .try-list{grid-template-columns:1fr}
+  .rk{grid-template-columns:38% 1fr;gap:28px}
+  .rk h3{font-size:21px}
+  .rk .c{font-size:14px}
+  .grid{grid-template-columns:repeat(4,1fr)}
+  .bb:nth-child(odd){margin-right:140px}
+  .bb:nth-child(even){margin-left:140px}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .steps li{grid-template-columns:1fr;text-align:center;padding:24px 16px}
+  .fixed{display:none}
+  .wrap{padding-bottom:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===== FV ===== -->
+  <header class="fv" id="fv">
+    <div class="confetti" data-confetti="34"></div>
+    <div class="fv-top"><b>うなぎ屋かわすい</b><span>楽天市場 出店23年目</span></div>
+    <div class="fv-body">
+      <h1 class="fv-title">RAKUTEN<br>SHOP OF<br>THE YEAR<span class="yr">2026</span></h1>
+      <div class="fv-badge">
+        <span class="s">投票受付中</span>
+        <!-- ▼要確認：投票締切日時 -->
+        <span class="d">11.30</span>
+        <span class="t">AM9:59まで</span>
+      </div>
+      <div class="fv-mid">
+        <p class="fv-copy">23年分の<br><em>ありがとう</em>をこめて<br>あなたの一票を<br>お待ちしています</p>
+        <img class="fv-don" src="images/fv-don.webp" alt="うなぎ屋かわすいのうな丼" width="800" height="800" onerror="this.onerror=null;this.src='images/fv-don.png'">
+      </div>
+      <p class="fv-sub">うなぎ屋かわすいを「ショップ・オブ・ザ・イヤー2026」に。投票と応援メッセージをよろしくお願いいたします。</p>
+    </div>
+    <div class="fv-cta">
+      <a class="vote" data-vote href="#">うなぎ屋かわすいに投票する<span class="arw">▶</span></a>
+      <p class="vote-note">楽天市場の投票ページが開きます</p>
+    </div>
+  </header>
+
+  <!-- ===== 投票スタート ===== -->
+  <section class="start">
+    <span class="tag">11月1日 START</span>
+    <h2>楽天市場<br><b>「ショップ・オブ・ザ・イヤー2026」</b><br>の投票が始まりました</h2>
+    <!-- ▼要確認：投票期間 -->
+    <dl class="period"><dt>投票期間</dt><dd>2026年11月1日（日）10:00 〜<br>11月30日（月）9:59</dd></dl>
+  </section>
+
+  <!-- ===== お手紙 ===== -->
+  <section class="letter-sec">
+    <div class="letter-frame">
+      <div class="letter">
+        <p class="to">お客様へ</p>
+        <p>いつもうなぎ屋かわすいをご愛顧いただき、誠にありがとうございます。<br>11月1日より、楽天市場「ショップ・オブ・ザ・イヤー2026」の投票が始まりました。</p>
+        <p>当店は2004年に楽天市場に出店し、今年で<mark>23年目</mark>を迎えました。<br>こうして歩み続けてこられたのも、いつも支えてくださるお客様のおかげです。心より感謝申し上げます。</p>
+        <p>2026年は、これまで以上に<mark>新しい企画やキャンペーンに挑戦</mark>することができました。<br>これからも、お客様に喜んでいただけるお店を目指して、さまざまなことに取り組んでまいります。</p>
+        <p>「こんな企画をまたやってほしい」「こんな商品があったらうれしい」など、ぜひ皆様のお声をお聞かせください。<br>お寄せいただくご意見や温かいメッセージが、スタッフ一同の大きな励みとなります。</p>
+        <p>うなぎ屋かわすいにぜひ一票をお寄せいただけますと幸いです。</p>
+        <p class="sign"><small>2026年11月</small>うなぎ屋かわすい スタッフ一同</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 23年目 ===== -->
+  <section class="years dark">
+    <div class="head">
+      <span class="en">SINCE 2004</span>
+      <h2>楽天市場とともに<br>歩んだ23年</h2>
+    </div>
+    <p class="big"><span class="n">23</span><span class="u">年目</span></p>
+    <ol class="yline">
+      <li><b>2004</b>楽天市場に<br>出店</li>
+      <li><b>2014</b>出店<br>10周年</li>
+      <li class="now"><b>2026</b>22周年を迎え<br>23年目へ</li>
+    </ol>
+    <p class="msg">こうして歩み続けてこられたのも<br>いつも支えてくださる<br>お客様のおかげです</p>
+  </section>
+
+  <!-- ===== 2026年の挑戦（▼要確認：内容は差し替え可） ===== -->
+  <section class="try">
+    <div class="in">
+      <div class="head">
+        <span class="en">CHALLENGE 2026</span>
+        <h2>今年はこんなことに<br>挑戦しました</h2>
+        <p class="lead">皆様の声をヒントに、新しい企画を<br>形にしてきました</p>
+      </div>
+      <div class="try-list">
+        <div class="try-card"><span class="no">01</span><div><h3>出店22周年記念祭</h3><p>日頃の感謝をこめて、記念の特別企画をお届けしました。</p></div></div>
+        <div class="try-card"><span class="no">02</span><div><h3>お歳暮 早割キャンペーン</h3><p>早めのご注文でおトクに贈れる、冬のギフト企画をスタートしました。</p></div></div>
+        <div class="try-card"><span class="no">03</span><div><h3>冬の味覚ラインナップ</h3><p>うなぎに加えて、生ズワイガニや紀州の本マグロ、有田みかんもお届けしています。</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 商品 ===== -->
+  <section class="items">
+    <div class="in">
+      <div class="head">
+        <span class="en">KAWASUI'S CHOICE</span>
+        <h2>かわすいの<br>人気うなぎ</h2>
+        <p class="lead">まだ食べたことのない方にも<br>ぜひ一度味わっていただきたい逸品です</p>
+      </div>
+      <div class="rank">
+        <article class="rk">
+          <a class="ph" href="https://item.rakuten.co.jp/kawasui/10000130/"><span class="no">01</span><img src="https://shop.r10s.jp/kawasui/cabinet/check/ota-dai80_601.jpg" alt="国産うなぎ蒲焼き3種セット" loading="lazy"></a>
+          <div>
+            <h3>国産うなぎ蒲焼き<br>3種セット</h3>
+            <p class="c">長焼き・カット・きざみを食べ比べ。ご家族みんなで囲める定番セットです。</p>
+            <p class="price">5,990 – 7,715<small>円（税込）</small></p>
+            <a class="go" href="https://item.rakuten.co.jp/kawasui/10000130/">商品を見る ›</a>
+          </div>
+        </article>
+        <article class="rk">
+          <a class="ph" href="https://item.rakuten.co.jp/kawasui/10002324/"><span class="no">02</span><img src="https://shop.r10s.jp/kawasui/cabinet/check/ota2_601.jpg" alt="中身が選べる国産うなぎ2種セット" loading="lazy"></a>
+          <div>
+            <h3>中身が選べる<br>国産うなぎ2種セット</h3>
+            <p class="c">お好みの組み合わせを選べる、自分用にもギフトにも人気のセット。</p>
+            <p class="price">4,600 – 5,030<small>円（税込）</small></p>
+            <a class="go" href="https://item.rakuten.co.jp/kawasui/10002324/">商品を見る ›</a>
+          </div>
+        </article>
+        <article class="rk">
+          <a class="ph" href="https://item.rakuten.co.jp/kawasui/10002524/"><span class="no">03</span><img src="https://shop.r10s.jp/kawasui/cabinet/check/s-kb2300sn_601.jpg" alt="国産うなぎ2尾入300g" loading="lazy"></a>
+          <div>
+            <h3>国産うなぎ<br>2尾入 300g</h3>
+            <p class="c">ふっくら焼き上げた蒲焼きを2尾。ご夫婦やお二人の食卓に。</p>
+            <p class="price">5,560<small>円〜（税込）</small></p>
+            <a class="go" href="https://item.rakuten.co.jp/kawasui/10002524/">商品を見る ›</a>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="sub-head">はじめての方にも</h3>
+      <div class="grid">
+        <a class="it" href="https://item.rakuten.co.jp/kawasui/10002290/"><span class="ph"><img src="https://shop.r10s.jp/kawasui/cabinet/gifuto/gf-k1002ks2_601.jpg" alt="きざみと肝吸いギフト" loading="lazy"></span><h4>きざみと肝吸いギフト</h4><p class="price">3,990<small>円</small></p><p class="tg">送料無料・冷凍便</p></a>
+        <a class="it" href="https://item.rakuten.co.jp/kawasui/10002526/"><span class="ph"><img src="https://shop.r10s.jp/kawasui/cabinet/gifuto/imgrc0109082864.jpg" alt="うなぎのおつまみセット" loading="lazy"></span><h4>うなぎのおつまみセット</h4><p class="price">4,800<small>円</small></p><p class="tg">送料無料・冷凍便</p></a>
+        <a class="it" href="https://item.rakuten.co.jp/kawasui/10002534/"><span class="ph"><img src="https://shop.r10s.jp/kawasui/cabinet/ncimag00/cut2100snj-3_601.jpg" alt="常温タイプ 蒲焼きカット3人前" loading="lazy"></span><h4>常温タイプ 蒲焼きカット3人前</h4><p class="price">5,990<small>円〜</small></p><p class="tg">送料無料・冷凍庫いらず</p></a>
+        <a class="it" href="https://item.rakuten.co.jp/kawasui/10000113/"><span class="ph"><img src="https://shop.r10s.jp/kawasui/cabinet/gifuto/gf-kb1702sn_601.jpg" alt="特大うなぎ蒲焼き170g×2本" loading="lazy"></span><h4>特大うなぎ蒲焼き 170g×2本</h4><p class="price">8,210<small>円〜</small></p><p class="tg">送料無料・冷凍便</p></a>
+      </div>
+      <div class="shop-link"><a class="btn" href="https://www.rakuten.co.jp/kawasui/">うなぎ屋かわすい トップへ</a></div>
+    </div>
+  </section>
+
+  <!-- ===== お声 ===== -->
+  <section class="voice">
+    <div class="in">
+      <div class="head">
+        <span class="en">YOUR VOICE</span>
+        <h2>皆様のお声を<br>お聞かせください</h2>
+        <p class="lead">投票ページの応援メッセージ欄に<br>ひとことお寄せいただけるとうれしいです</p>
+      </div>
+      <div class="bubbles">
+        <p class="bb">こんな企画を、またやってほしい</p>
+        <p class="bb">こんな商品があったらうれしいな</p>
+        <p class="bb">いつもおいしいうなぎをありがとう</p>
+        <p class="bb">家族みんなで楽しみにしています</p>
+      </div>
+      <p class="after">いただいたご意見や温かいメッセージは<br>スタッフ一同の大きな励みになります</p>
+    </div>
+  </section>
+
+  <!-- ===== 投票方法 ===== -->
+  <section class="how">
+    <div class="in">
+      <div class="head">
+        <span class="en">HOW TO VOTE</span>
+        <h2>投票はかんたん<br>3ステップ</h2>
+      </div>
+      <ol class="steps">
+        <li><span class="sn">STEP<b>1</b></span><div><h3>投票ボタンをタップ</h3><p>このページの投票ボタンから、楽天市場の投票ページへ</p></div></li>
+        <li><span class="sn">STEP<b>2</b></span><div><h3>楽天会員でログイン</h3><p>お持ちの楽天会員IDでログインしてください</p></div></li>
+        <li><span class="sn">STEP<b>3</b></span><div><h3>投票＆応援メッセージ</h3><p>うなぎ屋かわすいに一票と、ひとことメッセージを</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== 締め ===== -->
+  <section class="last" id="last">
+    <div class="confetti" data-confetti="22"></div>
+    <div class="in2">
+      <span class="en">THANK YOU FOR YOUR SUPPORT</span>
+      <h2>うなぎ屋かわすいに<br>あなたの一票を</h2>
+      <a class="vote" data-vote href="#">うなぎ屋かわすいに投票する<span class="arw">▶</span></a>
+      <!-- ▼要確認：投票期間 -->
+      <p class="vote-note">投票期間<br>2026年11月1日（日）10:00 〜 11月30日（月）9:59</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- スマホ追従ボタン -->
+<div class="fixed" id="fixed"><a class="vote" data-vote href="#">うなぎ屋かわすいに投票する<span class="arw">▶</span></a></div>
+
+<script>
+(function(){
+  // ▼投票ページURL（ここだけ変えれば全ボタンに反映）
+  var VOTE_URL = 'https://award.rakuten.co.jp/?menu=shop&aid=101&l-id=SOY_fromshop&s=206971';
+  document.querySelectorAll('[data-vote]').forEach(function(a){
+    a.href = VOTE_URL;
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+
+  // 投票ボタンのシャイン（ランダム間隔）
+  function shine(){
+    document.querySelectorAll('.vote').forEach(function(b){
+      b.classList.remove('kw-shine-play');
+      void b.offsetWidth;
+      b.classList.add('kw-shine-play');
+    });
+    setTimeout(shine, 2800 + Math.random() * 3400);
+  }
+  setTimeout(shine, 1200);
+
+  // 紙吹雪（落下距離はコンテナ実寸のpxで渡す）
+  var COLORS = ['#ead29a', '#c9a45c', '#f6e7bd', '#a3201a', '#ffffff'];
+  function confetti(box){
+    var n = +box.dataset.confetti, fall = box.offsetHeight + 60;
+    for (var i = 0; i < n; i++) {
+      var s = document.createElement('span'), w = 4 + Math.random() * 5;
+      s.style.cssText = 'left:' + (Math.random() * 100) + '%;width:' + w + 'px;height:' + (w * (1.6 + Math.random())) + 'px;background:' + COLORS[i % COLORS.length] +
+        ';animation-duration:' + (5 + Math.random() * 6) + 's;animation-delay:' + (-Math.random() * 10) + 's;--kw-fall:' + fall + 'px;--kw-drift:' + (Math.random() * 80 - 40) + 'px';
+      box.appendChild(s);
+    }
+  }
+  window.addEventListener('load', function(){
+    document.querySelectorAll('[data-confetti]').forEach(confetti);
+  });
+
+  // FVを過ぎたら追従ボタン表示
+  // 締めの投票ボタンが見えている間は隠す
+  var fixed = document.getElementById('fixed'), shown = {};
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ shown[e.target.id] = e.isIntersecting; });
+    fixed.classList.toggle('on', !shown.fv && !shown.last);
+  });
+  io.observe(document.getElementById('fv'));
+  io.observe(document.getElementById('last'));
+})();
+</script>
+</body>
+</html>
