@@ -213,10 +213,27 @@ a{color:inherit;text-decoration:none}
 .steps h3{font-size:16px;font-weight:700;line-height:1.5}
 .steps p{font-size:14px;color:var(--ink-2);line-height:1.7;margin-top:2px}
 
+/* ---------- スタッフ（切り替わる写真） ---------- */
+.staff{padding:8px 0 64px}
+.staff .head{margin-bottom:26px}
+.sl{position:relative;aspect-ratio:3/2;overflow:hidden;background:var(--kuro);box-shadow:0 12px 28px rgba(35,28,23,.22)}
+.sl img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity 1.2s ease,transform 6s ease-out}
+.sl img.on{opacity:1;transform:scale(1)}
+.sl-cap{position:relative;min-height:3.6em;margin:18px 0 0;padding-left:18px;font-family:var(--hand);font-size:19px;line-height:1.6;color:var(--ink)}
+.sl-cap::before{content:"";position:absolute;left:0;top:.25em;bottom:.25em;width:3px;background:var(--beni)}
+.sl-cap span{display:block;transition:opacity .5s}
+.sl-cap small{display:block;font-family:var(--en);font-size:13px;letter-spacing:.14em;color:var(--beni)}
+.sl-dots{display:flex;justify-content:center;gap:10px;margin-top:16px}
+.sl-dots button{width:34px;height:4px;padding:0;border:0;background:#d8ccb7;cursor:pointer;transition:background .3s}
+.sl-dots button.on{background:var(--beni)}
+.last-ph{margin:0 auto 30px;max-width:560px;border:3px solid var(--kin);box-shadow:0 12px 28px rgba(0,0,0,.3)}
+.last-ph img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.last-ph figcaption{background:var(--kuro);color:var(--kin-l);font-size:15px;font-weight:700;letter-spacing:.08em;padding:10px 12px}
+
 /* ---------- 締め ---------- */
 .last{position:relative;background:linear-gradient(180deg,var(--beni) 0%,var(--beni-d) 100%);color:var(--kinari);padding:64px 24px 60px;text-align:center;overflow:hidden}
 .last .in2{position:relative;z-index:2}
-.last .en{font-size:15px;letter-spacing:.24em;color:var(--kin-l)}
+.last .en{display:block;font-size:15px;letter-spacing:.24em;color:var(--kin-l);margin-bottom:20px}
 .last h2{font-family:var(--head);font-weight:700;font-size:28px;line-height:1.6;letter-spacing:.06em;margin:12px 0 30px}
 .last .vote-note{color:rgba(244,238,227,.72)}
 
@@ -301,6 +318,26 @@ a{color:inherit;text-decoration:none}
         <p>うなぎ屋かわすいにぜひ一票をお寄せいただけますと幸いです。</p>
         <p class="sign"><small>2026年11月</small>うなぎ屋かわすい スタッフ一同</p>
       </div>
+    </div>
+  </section>
+
+  <!-- ===== スタッフ（写真が切り替わる） ===== -->
+  <section class="staff">
+    <div class="in">
+      <div class="head">
+        <span class="en">OUR STAFF</span>
+        <h2>うなぎ屋かわすいの<br>スタッフです</h2>
+        <p class="lead">今日もうなぎと、お客様のことを<br>考えながら働いています</p>
+      </div>
+      <div class="sl" id="sl">
+        <img class="on" src="images/staff/eel.webp" alt="うなぎを手に取るスタッフ" data-cap="うなぎと向き合う毎日" style="object-position:50% 40%">
+        <img src="images/staff/sabaki.webp" alt="笑顔でうなぎをさばくスタッフ" data-cap="さばく手元にも、笑顔" loading="lazy" style="object-position:50% 30%">
+        <img src="images/staff/grill.webp" alt="焼き上がった蒲焼きを確かめるスタッフ" data-cap="一枚ずつ焼き上がりを確かめて" loading="lazy">
+        <img src="images/staff/event.webp" alt="イベントでうなぎを焼くスタッフ" data-cap="イベントでも、元気に焼いています" loading="lazy" style="object-position:58% 50%">
+        <img src="images/staff/meeting.webp" alt="打ち合わせ中の笑顔のスタッフ" data-cap="皆様の声から、次の企画を考えています" loading="lazy" style="object-position:50% 30%">
+      </div>
+      <p class="sl-cap" aria-live="polite"><small>STAFF <span id="sl-no" style="display:inline">01</span></small><span id="sl-txt">うなぎと向き合う毎日</span></p>
+      <div class="sl-dots" id="sl-dots"></div>
     </div>
   </section>
 
@@ -403,6 +440,7 @@ a{color:inherit;text-decoration:none}
     <div class="confetti" data-confetti="22"></div>
     <div class="in2">
       <span class="en">THANK YOU FOR YOUR SUPPORT</span>
+      <figure class="last-ph"><img src="images/staff/storefront.webp" alt="店頭でガッツポーズをするスタッフ" loading="lazy"><figcaption>スタッフ一同、心よりお待ちしています</figcaption></figure>
       <h2>うなぎ屋かわすいに<br>あなたの一票を</h2>
       <a class="vote" data-vote href="#">うなぎ屋かわすいに投票する<span class="arw">▶</span></a>
       <p class="vote-note">投票は11月30日（月）09:59まで<br>投票すると最大10,000ポイントが10万名様に当たる！</p>
@@ -480,6 +518,31 @@ a{color:inherit;text-decoration:none}
     kg.href = KESSAN_URL;
   } else {
     kg.classList.add('off');
+  }
+
+  // スタッフ写真の切り替え（4.5秒ごと・ドットで手動切替）
+  var sl = document.getElementById('sl');
+  if (sl) {
+    var imgs = sl.querySelectorAll('img'), dots = document.getElementById('sl-dots'),
+        txt = document.getElementById('sl-txt'), no = document.getElementById('sl-no'), cur = 0, timer;
+    imgs.forEach(function(img, i){
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', (i + 1) + '枚目の写真');
+      b.addEventListener('click', function(){ go(i); });
+      dots.appendChild(b);
+    });
+    function go(i){
+      imgs[cur].classList.remove('on'); dots.children[cur].classList.remove('on');
+      cur = (i + imgs.length) % imgs.length;
+      imgs[cur].classList.add('on'); dots.children[cur].classList.add('on');
+      txt.style.opacity = 0;
+      setTimeout(function(){ txt.textContent = imgs[cur].dataset.cap; no.textContent = ('0' + (cur + 1)).slice(-2); txt.style.opacity = 1; }, 250);
+      clearTimeout(timer);
+      timer = setTimeout(function(){ go(cur + 1); }, 4500);
+    }
+    dots.children[0].classList.add('on');
+    timer = setTimeout(function(){ go(1); }, 4500);
   }
 
   // 投票ボタンのシャイン（ランダム間隔）
